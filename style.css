@@ -1,0 +1,306 @@
+/* Global Properties */
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    /*background: #1f2235;*/
+    background-color: #f5f5f5;
+    color: #3e3e3e;
+    font-family: "Baloo Tamma 2", cursive;
+}
+
+h1 span {
+    display: inline-block;
+    border-bottom: 2.5px solid black;
+}
+
+.modal {
+    font-family: "Roboto Slab", serif;
+}
+
+.modal h5 {
+    font-family: "Baloo Tamma 2", cursive;
+}
+
+/* Navigation Menu */
+
+#navbar::before {
+    content: "";
+    background: black;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 50%;
+}
+
+.navbar .navbar-nav .nav-link {
+    border: 2px solid transparent;
+    font-size: 1.3rem;
+    display: inline-block;
+    padding: auto 0px;
+}
+
+
+.navbar .navbar-nav .nav-link:hover {
+    text-decoration: none;
+    /* border-bottom: 2px solid #ffbd40; */
+    color: white;
+    /* transition: 0.2s ease; */
+}
+
+.navbar .navbar-nav .active {
+    font-weight: bold;
+}
+
+/* Home Section */
+
+.typed-cursor {
+    color: white;
+}
+
+#home {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+#home div::before {
+    content: "";
+    background: black;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 45%;
+}
+
+#home h1 {
+    font-size: 3rem;
+}
+
+#home::before {
+    content: "";
+    background: url("img/bg3.jpg") no-repeat;
+    background-position: left;
+    background-size: cover;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 100%;
+}
+
+/* About Section */
+
+#about .container {
+    padding: 3rem 1.25rem;
+    background-color: #fff;
+    margin-bottom: 3rem;
+    z-index: 2;
+    box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.06), 0 2px 5px 0 rgba(0, 0, 0, 0.2);
+    /* box-shadow:7px 5px 5px 5px rgba(0,0,0,0.5); */
+}
+
+#logo {
+    width: auto;
+    height: 160px;
+    display: block;
+    margin-top: 10px;
+    border: 0.5px solid grey;
+    border-radius: 2px;
+    box-shadow: 1px 1.2px 1px rgba(0, 0, 0, 0.5);
+    object-fit: cover;
+}
+
+#about p {
+    font-family: "Ubuntu", sans-serif;
+    font-size: 1.1rem;
+}
+
+#about .title-s {
+    font-weight: bolder;
+}
+
+#about a {
+    margin-top: 20px;
+    padding: 5px 24px;
+    background: #292b2c;
+    border: 2px solid #292b2c;
+    background: #292b2c;
+    border-radius: 6px;
+    text-decoration: none;
+    transition: all 0.2s ease;
+    color: white;
+    border-radius: 6px;
+}
+
+#about a:hover{
+    background: none;
+    color: black;
+}
+
+/* Project Section */
+
+.card{
+    box-shadow: 0 0.5px 0.5px 0 rgba(0, 0, 0, 0.06), 0 1px 3px 0 rgba(0, 0, 0, 0.1);
+}
+
+.card img {
+    width: 17.9rem;
+    height: 11rem;
+    object-fit: cover;
+}
+
+.card h5 {
+    font-family: "Roboto Slab", serif;
+    font-weight: 600;
+}
+
+.card p {
+    font-family: "Ubuntu", sans-serif;
+    font-size: 1rem;
+}
+
+/* Skills Section */
+
+.progress {
+    background: #ccc;
+    height: 0.4rem;
+    border-radius: 2px;
+    margin-top: 5px;
+    margin-bottom: 18px;
+}
+
+#skill .container span {
+    font-size: 1.3rem;
+    font-weight: 500;
+}
+
+#skill .info {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#skill p {
+    font-size: 1.3rem;
+}
+
+/* Contact Section */
+
+#contact-form label {
+    font-size: 1.1rem;
+    font-family: "Roboto Slab", serif;
+}
+
+#contact-form input,
+#contact-form textarea {
+    font-weight: 420;
+    font-size: 1.1rem;
+    width: 100%;
+    border-radius: 0px;
+    resize: none;
+	border: 0.7px solid rgb(144, 142, 142);
+    padding: 14px 12px;
+    outline: none;
+}
+
+#contact-form form{
+    width: 60%;
+    display: block;
+    margin: auto;
+}
+
+#contact-form small {
+    display: none;
+    color: red;
+    font-size: 0.95rem;
+    margin-left: 1px;
+    margin-top: 6px;
+}
+
+/* Scroll Section */
+
+#to-top {
+    display: flex;
+    position: fixed;
+    opacity: 0;
+    bottom: 32px;
+    right: 20px;
+    pointer-events: none;
+    width: 45px;
+    height: 40px;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    text-decoration: none;
+    transition: all 0.4s ease;
+    background: rgba(0, 0, 0, 0.8);
+}
+
+#to-top.active {
+    opacity: 1;
+    bottom: 32px;
+    pointer-events: auto;
+}
+
+#to-top i {
+    color: white;
+    font-size: 1.4rem;
+}
+
+/* Footer Section */
+
+footer span {
+    font-size: 0.8rem;
+}
+
+
+/* Utility Classes */
+
+.m-heading {
+    font-family: "Roboto Slab", serif;
+}
+
+/* Media Queries */
+
+@media (max-width: 1130px) {
+    #home h1 {
+        font-size: 2rem;
+    }
+
+    #home div::before {
+        opacity: 35%;
+    }
+
+    #about p,
+    #contact-form label,
+    #skill .container span,
+    #skill p,
+    .navbar .navbar-nav .nav-link {
+        font-size: 1.1rem;
+    }
+
+    #contact-form small {
+        font-size: 0.8rem;
+    }
+
+    #contact-form form{
+        width: 97%;
+    }
+}

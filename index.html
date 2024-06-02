@@ -1,0 +1,459 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <!-- Required meta tags -->
+        <meta charset="utf-8" />
+        <link rel="icon" href="l1.jpg" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+        <!-- Bootstrap CSS -->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous" />
+
+        <!-- My CSS -->
+        <link rel="stylesheet" href="style.css" />
+
+        <!-- Font Awesome -->
+        <script src="https://kit.fontawesome.com/996973c893.js"></script>
+
+        <!-- typing -->
+        <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+
+        <!-- Google Fonts -->
+        <link href="https://fonts.googleapis.com/css2?family=Baloo+Tamma+2:wght@400;500;600;700;800&family=Roboto+Slab:wght@200;400;600;900&display=swap" rel="stylesheet" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" />
+        <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap" rel="stylesheet" />
+
+        <title>Portfolio</title>
+        <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@2/dist/email.min.js"></script>
+        <script type="text/javascript">
+            (function () {
+                emailjs.init("user_iN7eJmXiMcVuJ1bsOMQAE");
+            })();
+        </script>
+    </head>
+
+    <body data-spy="scroll" data-target="#navbarSupportedContent">
+        <nav id="navbar" class="navbar navbar-b navbar-trans navbar-expand-md navbar-dark fixed-top">
+            <div class="container my-2">
+                <a class="navbar-brand" href="#">
+                    <i class="fas fa-code fa-1x text-warning"><b> S.M. Hasan </b></i>
+                </a>
+                <button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon" id="menubtn"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#home">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#about" onclick="document.getElementById('menubtn').click">About</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#projects">Projects</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#skill">Skills</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#contact-form">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+        <!-- ===== Intro  Section ===== -->
+
+        <section id="home" class="container">
+            <div class="text-center my-2">
+                <h3 class="text-white">Hello, I'm</h3>
+                <h2 class="text-warning m-heading">S.M. Waliur Rahman Hasan</h2>
+                <h5 class="mt-1 text-light">
+                    <span id="typed" class="mt-1"></span>
+                </h5>
+            </div>
+        </section>
+
+        <!-- ===== About  Section ===== -->
+        <section id="about" class="offset mx-3 mt-5">
+            <h1 class="text-center mb-5"><span>About me</span></h1>
+
+            <div class="container rounded text-black py-1 px-1">
+                <div class="row mt-2">
+                    <div class="col-lg-6 col-md-6 col-12 px-5">
+                        <img src="img/profile.jpeg" alt="img" class="img-fluid mt-3" id="logo" />
+                        <div class="mt-4">
+                            <p><span class="title-s">Name: </span> <span>S.M. Waliur Rahman</span></p>
+                            <p><span class="title-s">Profile: </span> <span>Web Developer</span></p>
+                            <p><span class="title-s">Profession: </span> <span>Student</span></p>
+                            <p><span class="title-s">Hobby: </span> <span>Programming</span></p>
+                            <p><span class="title-s">Social media: </span> <span>None(currently)</span></p>
+                            <br>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 col-md-6 col-12 px-5">
+                        <h4 class="my-2 m-heading text-dark mb-1 font-weight-bold">Let me introduce myself...</h4>
+                        <hr/>
+                        <p>My name is S.M. Waliur Rahman Hasan. I am actually a student in profession. That means I am actually now learning a lot of different things all the time.</p>
+                        <p>My hobby is programming. And for this hobby till now I have learnt 3 to 4 programming languages. I have a number of projects on these languages. And this website is also one of them.</p>
+                        <div class="text-center  my-4">
+                            <a href="">Download CV</a>
+                        </div>
+                        <br>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ===== Project  Section ===== -->
+
+        <section id="projects" class="offset mx-3 mt-5">
+            <h1 class="text-center mb-5"><span>My Projects</span></h1>
+
+            <div class="container my-3">
+                <div class="row">
+                    <div class="col-lg-4 col-md-6 col-12 mb-4">
+                        <div class="card" style="width: 18rem; display: block; margin: auto;">
+                            <img src="img/code.jpeg" class="card-img-top" alt="coding" />
+                            <div class="card-body">
+                                <h5 class="card-title">Computer Programs</h5>
+                                <p class="card-text">It is mentioned here that I have learnt a bunch of programming languages and through worked with it.</p>
+                                <a onclick="unredo(this)" class="btn btn-dark">Appreciate</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4 col-md-6 col-12 mb-4">
+                        <div class="card" style="width: 18rem; display: block; margin: auto;">
+                            <img src="img/bg2.jpg" class="card-img-top" alt="portfolio" />
+                            <div class="card-body">
+                                <h5 class="card-title">Portfolio</h5>
+                                <p class="card-text">Till now, I have worked with two portfolios of mine. And this is the latest one, which I have designed recently.</p>
+                                <a onclick="unredo(this)" class="btn btn-dark">Appreciate</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4 col-md-6 col-12 mb-4">
+                        <div class="card" style="width: 18rem; display: block; margin: auto;">
+                            <img src="img/responsive.jpeg" class="card-img-top" alt="responsive" />
+                            <div class="card-body">
+                                <h5 class="card-title">Responsive Design</h5>
+                                <p class="card-text">I have made a number of responsive contents of different devices. These designs are either graphical or programmed.</p>
+                                <a onclick="unredo(this)" class="btn btn-dark">Appreciate</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4 col-md-6 col-12 mb-4">
+                        <div class="card" style="width: 18rem; display: block; margin: auto;">
+                            <img src="img/bw.jpg" class="card-img-top" alt="..." />
+                            <div class="card-body">
+                                <h5 class="card-title">Business Website</h5>
+                                <p class="card-text">It is also a part of responsive designing project. I have worked with 0 business website and template.</p>
+                                <a onclick="unredo(this)" class="btn btn-dark">Appreciate</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4 col-md-6 col-12 mb-4">
+                        <div class="card" style="width: 18rem; display: block; margin: auto;">
+                            <img src="img/bg1.jpg" class="card-img-top" alt="..." />
+                            <div class="card-body">
+                                <h5 class="card-title">Android Development</h5>
+                                <p class="card-text">I have made a lot of mobile and desktop application and games with python and other programming languages.</p>
+                                <a onclick="unredo(this)" class="btn btn-dark">Appreciate</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4 col-md-6 col-12 mb-4">
+                        <div class="card" style="width: 18rem; display: block; margin: auto;">
+                            <img src="img/graphic.jpg" class="card-img-top" alt="..." />
+                            <div class="card-body">
+                                <h5 class="card-title">Graphics Design</h5>
+                                <p class="card-text">I have learnt graphic designing, specially PowerPoint animation and content making, simple logo designing etc.</p>
+                                <a onclick="unredo(this)" class="btn btn-dark">Appreciate</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ===== Skills  Section ===== -->
+
+        <section id="skill" class="offset mx-3 my-5">
+            <h1 class="text-center mb-5"><span>My Skills</span></h1>
+
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-6 col-md-6 col-12 px-3">
+                        <h5 id="sk-title" class="m-heading font-weight-bold">My Skills & Experiences</h5>
+                        <hr />
+                        <p class="mb-4">
+                            Actually I am not that much active in co-curricular activities. And so I don't have noteworthy skills. But in the last 1 year, I have gathered knowledge on some Computer based topics. I have learnt programming
+                            and I know almost 4 programming languages (C++, CSS, HTML, C). Again I have learnt about Graphics designing. And overall I have an medium experience of one year on these things.
+                        </p>
+                    </div>
+                    <div class="col-lg-6 col-md-6 col-12 mt-1">
+                        <div class="bar">
+                            <div class="info"><span>Programming</span><span>80%</span></div>
+                            <div class="progress">
+                                <div class="progress-bar bg-dark" role="progressbar" style="width: 80%;" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div>
+                            </div>
+                        </div>
+                        <div class="bar">
+                            <div class="info"><span>Game Development</span><span>20%</span></div>
+                            <div class="progress">
+                                <div class="progress-bar bg-dark" role="progressbar" style="width: 20%;" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100"></div>
+                            </div>
+                        </div>
+                        <div class="bar">
+                            <div class="info"><span>Android Development</span><span>0%</span></div>
+                            <div class="progress">
+                                <div class="progress-bar bg-dark" role="progressbar" style="width: 0%;" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"></div>
+                            </div>
+                        </div>
+                        <div class="bar">
+                            <div class="info"><span>Graphics Designing</span><span>40%</span></div>
+                            <div class="progress">
+                                <div class="progress-bar bg-dark" role="progressbar" style="width: 40%;" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100"></div>
+                            </div>
+                        </div>
+                        <div class="bar">
+                            <div class="info"><span>Web Designing</span><span>75%</span></div>
+                            <div class="progress">
+                                <div class="progress-bar bg-dark" role="progressbar" style="width: 75%;" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ===== Contact  Section ===== -->
+
+        <section id="contact-form" class="offset mx-1 my-5">
+            <h1 class="text-center mb-5"><span>Contact me</span></h1>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12 col-md-12 col-12">
+                        <form>
+                            <div class="form-group">
+                                <label for="name">Your Name: </label>
+                                <input type="text" class="form-control" id="name" placeholder="Enter your name" data-rule="minlen:4" data-msg="" />
+                                <small> Please enter at least 4 chars.</small>
+                            </div>
+                            <div class="form-group">
+                                <label for="mail">Email address: </label>
+                                <input type="email" class="form-control" id="mail" placeholder="Enter your email address" data-rule="required" data-msg="" />
+                                <small> Please enter a valid email.</small>
+                            </div>
+                            <div class="form-group">
+                                <label for="subject">Subject: </label>
+                                <input type="text" class="form-control" id="subject" placeholder="Enter the subject" data-rule="minlen:8" data-msg="Please enter at least 8 chars" />
+                                <small> Please enter at least 8 chars.</small>
+                            </div>
+                            <div class="form-group">
+                                <label for="msg">Message: </label>
+                                <textarea class="form-control" id="msg" rows="7" placeholder="Enter your message..." data-rule="required" data-msg="Please write something for us."></textarea>
+                                <small>Please write something for us.</small>
+                            </div>
+                        </form>
+                        <div class="text-center">
+                            <button id="btn" class="btn btn-outline-dark" onclick="check()">Send Message</button>
+                            <small>Here is the message status.</small>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ===== Scroll Section ===== -->
+
+        <a href="#" id="to-top"><i class="fas fa-angle-up"></i></a>
+
+        <!-- ===== Footer Section ===== -->
+        <footer class="bg-dark text-center text-white">
+            <!-- Grid container -->
+            <div class="container p-4 pb-0">
+                <!-- Section: Social media -->
+                <section class="mb-4">
+                    <!-- Facebook -->
+                    <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button" data-toggle="modal" data-target="#FBModal">
+                        <i class="fab fa-facebook-f"></i>
+                    </a>
+
+                    <!-- Twitter -->
+                    <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button" data-toggle="modal" data-target="#TWModal">
+                        <i class="fab fa-twitter"></i>
+                    </a>
+
+                    <!-- Google -->
+                    <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button" data-toggle="modal" data-target="#GModal">
+                        <i class="fas fa-link"></i>
+                    </a>
+
+                    <!-- Instagram -->
+                    <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button" data-toggle="modal" data-target="#IModal">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+
+                    <!-- Linkedin -->
+                    <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button" data-toggle="modal" data-target="#inModal">
+                        <i class="fab fa-linkedin-in"></i>
+                    </a>
+
+                    <!-- Github -->
+                    <a class="btn btn-outline-light btn-floating m-1" href="https://github.com/smwrhasan" role="button" target="_blank"><i class="fab fa-github"></i></a>
+                </section>
+            </div>
+
+            <!-- Copyright -->
+            <div class="text-center p-3 m-heading" style="background-color: rgba(0, 0, 0, 0.2);">
+                <p class="text-white" style="margin-bottom: 8px;">&copy; 2021 Copyright: &shy; Portfolio | All rights reserved!</p>
+                <p  style="margin-bottom: 10px;"><span>designed by </span><b class="text-warning font-weight-300">S.M. Waliur Rahman Hasan</b></p>
+            </div>
+        </footer>
+
+        <!-- ===== Modal  Section ===== -->
+
+        <!-- FB Modal -->
+        <div class="modal fade" id="FBModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel"><i class="fab fa-facebook-square text-primary"> </i> Facebook</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <p><b>Sorry! </b>I don't have any Facebook account right now, but expecting for future.</p>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Twitter Modal -->
+        <div class="modal fade" id="TWModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel"><i class="fab fa-twitter-square text-primary"> </i> Twitter</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <p><b>Sorry! </b>I don't have any Twitter account right now, but expecting for future.</p>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- G Modal -->
+        <div class="modal fade" id="GModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel"><i class="fas fa-link text-dark"> </i> Portfolio</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body" style="word-wrap: break-word;">
+                        <p><b>Portfolio: </b>https://smwrhasan.github.io/portfolio/</p>
+                        <small class="text-secondary">Apk version of portfolio</small>
+                        <div id="apk-btns">
+                        	<!--<a href="" class="btn btn-primary mt-1 pb-2">Download Apk</a>-->
+                        	<a href="" class="btn btn-info mt-1 mr-2 pb-2" target="_blank">
+                                <p style="margin-bottom: 0px;">Download Apk</p><small><i class="fab fa-app-store"> &shy; AppsEasy</i></small>
+                            </a>
+                        	<a href="" class="btn btn-success mt-1 pb-2" target="_blank">
+                                <p style="margin-bottom: 0px;">Download Apk</p><small><i class="fab fa-google-drive"> &shy; Google Drive</i></small>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Insta Modal -->
+        <div class="modal fade" id="IModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel"><i class="fab fa-instagram text-danger"> </i> Instagram</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <p><b>Sorry! </b>I don't have any Instagram ID right now, but expecting for future.</p>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- LinkedIn Modal -->
+        <div class="modal fade" id="inModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel">Linked <i class="fab fa-linkedin text-primary"> </i></h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <p><b>Sorry! </b>I don't have any LinkedIn account right now, but expecting for future.</p>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Optional JavaScript; choose one of the two! -->
+
+        <script>
+            var typed = new Typed("#typed", {
+                strings: ["Web Developer", "Android Developer", "Graphic Designer", "Programmer", "CEO Portfolio"],
+                backSpeed: 35,
+                smartBackspace: true,
+                backDelay: 1400,
+                startDelay: 1000,
+                typeSpeed: 50,
+                loop: true,
+            });
+        </script>
+        <script src="typer.js"></script>
+
+        <!-- Option 1: jQuery and Bootstrap Bundle (includes Popper) -->
+        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous"></script>
+
+        <!-- Option 2: Separate Popper and Bootstrap JS -->
+        <!--
+        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.min.js" integrity="sha384-+YQ4JLhjyBLPDQt//I+STsc9iw4uQqACwlvpslubQzn4u2UU2UFM80nGisd026JF" crossorigin="anonymous"></script>
+        -->
+    </body>
+</html>
